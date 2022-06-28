@@ -1,26 +1,18 @@
+
 body{
     background: rgba(102, 209, 255, 0.1);
     margin: 0;
     color: #060D10;
 }
-header{
-    background-color: #87CEEB;
+.container{
+    width: 1440px;
+    margin: 0 auto;
 }
 h1, h2, h3{
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     line-height: 167%;
     text-transform: uppercase;
-}
-h1{
-    font-size: 60px;
-    text-align: center;
-    color:rgba(255, 255, 255, 1);
-    text-shadow: 1px 1px 2px #060D10;
-}
-.description{
-    color: #FFFFFF;
-    text-shadow: 1px 1px 2px #060D10;
 }
 h2{
     font-size: 48px;
@@ -36,10 +28,24 @@ p{
     line-height: 140%;
 }
 
-.head, .foot{
+/* Head */
+.header{
+    background-color: #87CEEB;
+    padding: 31px 0;
+}
+.header-wrap{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
+}
+.title{
+    font-size: 60px;
+    color:rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 2px #060D10;
+}
+.description{
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px #060D10;
 }
 .btn-head{
     font-family: 'Montserrat', sans-serif;
@@ -49,20 +55,6 @@ p{
     height: 45px;  
     border: none;
     border-radius: 4px;
-    margin: 34px 81px;
-}
-.btn-foot{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 36px;
-    background-color: Transparent;
-    border-radius: 4px;
-    display: flex;
-    
-    justify-content: center;
-}
-.logo{
-    margin: 31px 0 ;
 }
 .phone{
     font-family: 'Montserrat', sans-serif;
@@ -71,28 +63,69 @@ p{
     line-height: 34px;
     color: #060D10;
     text-decoration: none;
-    margin: 39px 81px;
 }
 
+/* Promo */
 .promo{
-    height: 766px;
-    background: url("../img/promo.png");
+    background: url("../img/promo.png"), #87CEEB;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+.promo-fade{
+    background-color: rgb(6, 13, 16, .25);
+    padding: 240px 0 260px;
 }
 
-footer{
-    width: 100%;
-    background-color: #060D10;
-    color: white;
-    display: inline-flex;
+/* School information */
+.info-wrap{
+    padding: 170px 0;
+}
+
+/* Letsgo */
+.photos{
+    display: flex;
     justify-content: space-between;
 }
-
-.join>p{
-    display:inline;
+.btn-foot{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    background-color: Transparent;
+    border-radius: 4px;
 }
 
-.container{
-    width: 1440px;
-    margin: 0 auto;
+/* Footer */
+.footer{
+    background-color: #060D10;
+    color: white;
+    padding: 35px 0;
 }
+.footer-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.join{
+    display: flex;
+    align-items: center;
+}
+.social-link{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    display: block;
+}
+.social{
+    display: flex;
+    list-style-type: none;
+}
+.social-item{
+    margin-left: 20px;
+}
+
+
+

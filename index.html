@@ -16,25 +16,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-   <div>
-        <header>
-               <div class="container">
-                   <div class="head">
-                        <button class="btn-head">Начать учиться</button>
-                        <img class="logo" src="img/logo.svg" alt="">
-                        <a class="phone" href="tel:+78008000000">+7 800 800-00-00</a>
-                   </div>
-               </div>
-        </header>
-    
-        <main>
-            <section class="promo">
-                <div class="container">
-                    <h1>Обучение горным лыжам в Санкт-Петербурге</h1>
-                    <p class="description">Учим на склонах Игоры, Охта-парка и на базе собственной<br>тренировочной базы в центре города с применением<br>уникального тренажера, имитирующего склон</p>
+    <header class="header">
+            <div class="container">
+                <div class="header-wrap">
+                    <button class="btn-head">Начать учиться</button>
+                    <img class="logo" src="img/logo.svg" alt="">
+                    <a class="phone" href="tel:+78008000000">+7 800 800-00-00</a>
                 </div>
-            </section>
-            <section>
+            </div>
+    </header>
+
+    <main>
+        <section class="promo">
+            <div class="promo-fade">
+                <div class="container">
+                        <h1 class="title">Обучение горным лыжам в Санкт-Петербурге</h1>
+                        <p class="description">Учим на склонах Игоры, Охта-парка и на базе собственной<br>тренировочной базы в центре города с применением<br>уникального тренажера, имитирующего склон</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="school-information">
+            <div class="info-wrap">
                 <div class="container">
                     <h2>Учиться с нами увлекательно и эффективно</h2>
                     <table>
@@ -60,33 +63,40 @@
                         </tr>
                     </table>
                 </div>
-            </section>
-            <hr>
-            <section class="go-ski">
-                <div class="container">
+            </div>
+        </section>
+        
+        <section class="letsgo">
+            <div class="container">
+                <div class="letsgo-wrap">
                     <h2>гоу! покорять склоны вместе</h2>
                     <button class="btn-foot">Начать учиться</button>
                     <div class="photos">
                         <img src="img/1.jpg" alt="">
                         <img src="img/2.jpg" alt="">
-                        <img src="img/3.png" alt="">
+                        <img src="img/3.jpg" alt="">
                         <img src="img/4.jpg" alt="">
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
+    </main>
 
-        <footer>
-           <div class="container">
-               <div class="foot">
-                   <div class="join">
-                        <p>Присоединяйся:</p>
-                        <img src="img/social.svg" alt="">
-                   </div>
-                    <p>copy+v copy+c © 2021</p>
-               </div>
-           </div>
-        </footer>
-   </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="join">
+                    <p>Присоединяйся</p>
+                    <ul class="social">
+                        <li class="social-item"><a href="#" class="social-link" style="background-image: url(img/tw.svg);"></a></li>
+                        <li class="social-item"><a href="#" class="social-link" style="background-image: url(img/in.svg);"></a></li>
+                        <li class="social-item"><a href="#" class="social-link" style="background-image: url(img/google.svg);"></a></li>
+                        <li class="social-item"><a href="#" class="social-link" style="background-image: url(img/fb.svg);"></a></li>
+                        </ul>
+                </div>
+                <p class="copyright">copy+v copy+c © 2021</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
