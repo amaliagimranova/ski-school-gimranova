@@ -1,63 +1,66 @@
+/* Fonts */
+/* oswald-500 - latin_cyrillic */
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/oswald-v48-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/oswald-v48-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v24-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v24-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-500 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/montserrat-v24-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v24-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 
 body{
-    background: rgba(102, 209, 255, 0.1);
+    font-family:  "Montserrat", sans-serif;
     margin: 0;
     color: #060D10;
+    background: linear-gradient(200.35deg, rgba(102, 209, 255, .1) 72%, rgba(196, 196, 196, 0) 43.86%);
+
 }
 .container{
-    width: 1440px;
+    width: 1278px;
     margin: 0 auto;
 }
-h1, h2, h3{
-    font-family: 'Oswald', sans-serif;
-    font-weight: 500;
-    line-height: 167%;
-    text-transform: uppercase;
-}
-h2{
-    font-size: 48px;
-    text-align: center;
-}
-h3{
-    font-size: 32px;
-}
-p{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 140%;
-}
 
-/* Head */
+/* Header */
 .header{
-    background-color: #87CEEB;
-    padding: 31px 0;
+    background-color: #66D1FF;
 }
 .header-wrap{
+    padding: 30px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.title{
-    font-size: 60px;
-    color:rgba(255, 255, 255, 1);
-    text-shadow: 1px 1px 2px #060D10;
-}
-.description{
-    color: #FFFFFF;
-    text-shadow: 1px 1px 2px #060D10;
-}
 .btn-head{
-    font-family: 'Montserrat', sans-serif;
+    font-family:  "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 24px;
-    width: 276px;
-    height: 45px;  
+    line-height: 29px;
+    background-color: #fff;
+    padding: 8px 41px ;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 .phone{
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 28px;
     line-height: 34px;
@@ -67,40 +70,119 @@ p{
 
 /* Promo */
 .promo{
-    background: url("../img/promo.png"), #87CEEB;
+    background-image: url("../img/promo.png");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     text-align: center;
 }
 .promo-fade{
-    background-color: rgb(6, 13, 16, .25);
     padding: 240px 0 260px;
 }
+.promo-title{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 89px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 2px #060D10;
+    margin: 0;
+}
 
-/* School information */
-.info-wrap{
+.promo-text{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: white;
+    text-shadow: 1px 1px 2px #060D10;
+    margin: 60px 0 0;
+}
+
+/*School Options */
+.options-wrap{
+    padding: 180px 0 90px;
+}
+.options-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -30px;
+}
+.options-item{
+    flex-basis: 33.33%;
+}
+.option-card{
+    padding-left: 30px;
+}
+.options-item-title{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 53px;
+    text-transform: uppercase;
+}
+.options-title{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 110px;
+}
+.options-item-text{
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 70px;
+}
+
+/* Start */
+body > .start{
+    background: linear-gradient(208.35deg, #66D1FF 43.85%, rgba(196, 196, 196, 0) 43.86%);
+}
+.start-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 170px 0;
 }
-
-/* Letsgo */
-.photos{
-    display: flex;
-    justify-content: space-between;
+.start-title{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin: 0 0 70px;
 }
-.btn-foot{
-    font-family: 'Montserrat', sans-serif;
+.btn-start{
+    font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 500;
     font-size: 36px;
-    background-color: Transparent;
+    line-height: 44px;
+    background-color: rgba(0,0,0,0);
+    border: 3px solid #060D10;
     border-radius: 4px;
+    padding: 17px 105px;
+    margin-bottom: 130px;
+    cursor: pointer;
+}
+.start-images{
+    display: flex;
+    margin: 0 -15px;
+}
+.start-img-card{
+    padding: 0 15px;
+}
+.start-img{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Footer */
 .footer{
     background-color: #060D10;
     color: white;
-    padding: 35px 0;
+    padding: 25px 0;
 }
 .footer-wrap{
     display: flex;
@@ -111,12 +193,16 @@ p{
     display: flex;
     align-items: center;
 }
+.join-text{
+    font-size: 20px;
+    line-height: 33px;
+}
 .social-link{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     display: block;
 }
 .social{
@@ -126,6 +212,8 @@ p{
 .social-item{
     margin-left: 20px;
 }
-
-
-
+.copyright{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
